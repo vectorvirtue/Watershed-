@@ -131,25 +131,36 @@ text-align: left;
 input{
     outline: none;
     border: none;
-    width: 60vh;
     height: 4vh;
+    width: 60vh;
     background-color: #F6F6F6;
     padding: 20px;
     border-radius: 8px;
 
+}
+
+.myinput{
+    background-color: transparent;
 }
 
 .naija{
-    outline: none;
-    border: none;
+    width: fit-content;
+    height: 5vh;
     width: 60vh;
-    height: 4vh;
-    background-color: #F6F6F6;
-    padding: 20px;
+    background-color: #F6F6F6; 
     border-radius: 8px;
+    display: flex;
+    align-items: center;
    
 }
+  .naija img{
+    margin-left: 55px;
+   }
+    span{
+        margin-left: -10px;
+    }
 
+  
 .textfield{
     gap: 10px;
 }
