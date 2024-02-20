@@ -224,14 +224,8 @@ height: 21.8px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 4px 18px 0px #0000000A;
-    width: 40vh;
-    border-radius: 10px;
-    padding: 40px;
-    gap: 10px;
-    font-family: Poppins;
-    margin-inline: 574px;
-    margin-block: 293px;
+  background-image: url(Rectangle\ 15\ \(1\).png);
+  background-position: center;
 }
 
 .ve{
@@ -252,15 +246,30 @@ height: 21.8px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url(Rectangle\ 15.png);
+    background-position: center;
+   
+  
+}
+
+.create{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 4px 18px 0px #0000000A;
-    width: 40vh;
     border-radius: 10px;
     padding: 40px;
     gap: 10px;
     font-family: Poppins;
+    width: 40vh;
     margin-inline: 574px;
     margin-block: 293px;
+    background-color: white;
+  
 }
+
 
 
 .login{
