@@ -90,10 +90,11 @@ span a
 {
     font-weight: 900;
     color: black;
+    margin-left: 10px;
 }
 
 .span{
-    gap: 19px;
+    
     padding-top: 40px;
 }
 
@@ -158,6 +159,7 @@ input{
    }
     span{
         margin-left: -10px;
+        
     }
 
   
