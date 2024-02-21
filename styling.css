@@ -343,3 +343,24 @@ select{
     color:#4A4A4AF0;
     font-family: Poppins;
     }
+    .bxon
+    {
+        width: 30%; 
+        background: #E5EDEA;
+        display: flex;
+        flex-direction: column;
+        padding: 90px;
+        padding-top: 180px;
+        gap: 50px;
+        
+    }
+
+    .bxtw{
+        
+            width: 70%;
+        padding: 103px;
+            
+        }
+        
+   
+    
