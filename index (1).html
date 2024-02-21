@@ -17,19 +17,23 @@
     <div class="signup">
         <div class="su">Login</div>
         <div class="kd">Input the correct details below to login to your account</div>
+
     </div>
     <div class="atype">
+      <div class="errorpop " id="error">
+        Incorrect Username Or Password
+      </div>
         <div class="textfield">
             <div class="char">
                 Email Address
             </div>
-            <input type="text" class="box" placeholder="Email">
+            <input type="text" class="box" placeholder="Email"  id="myemail">
         </div>
         <div class="textfield">
             <div class="char">
               Password
             </div>
-            <input type="text" class="box" placeholder="..........">
+            <input type="password" class="box" placeholder=".........." id="mypassword">
             <img src="Shape.png" alt="">
         </div>
       <div class="text">
@@ -37,10 +41,31 @@
       </div>
     </div>
 
-    <div class="primary"><a href="">Login</a></div>
+    <div class="primary" onclick="loginfunc()"><a href="#">Login</a></div>
     <div class="span">
        Don't have an account? <span><a href="index (5).html">Create Account</a></span>
     </div>
   </div>
+
+
+  <script>
+
+    function loginfunc() {
+
+      const correctemail = 'test@gmail.com'
+      const correctpassword = 'test'
+      const username = document.getElementById("myemail").value
+      const password = document.getElementById("mypassword").value
+     const error = document.getElementById("error")
+
+      if (correctemail == username & password == correctpassword ) {
+        error.classList.remove('errorshow')
+        window.location.href = 'dashboard.html'
+      } else {
+        error.classList.add('errorshow')
+      }
+    }
+
+  </script>
 </body>
 </html>

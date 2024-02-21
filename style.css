@@ -309,3 +309,42 @@ padding-bottom: 13px;
     text-decoration: none;
     color: #1B2B41B8;
 }
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Rectangle\ 142.png);
+    background-position: center;
+   
+  
+}
+ .up{
+   
+        font-size: 30px;
+        font-weight: 500;
+        width: 40vh;
+        padding-inline: 59px;
+    
+ }
+
+ .wd{
+   padding-inline: 3px;
+   width: 115%;
+   padding-bottom: 30px;
+ }
+
+
+ .errorpop{
+    background-color: #ffebe9;
+    padding: 20px;
+    width: 100%;
+    margin-top: 9px;
+    font-family: 'poppins';
+    display: none;
+ }
+
+ .errorshow{
+    display: flex;
+ }
