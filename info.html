@@ -135,7 +135,7 @@
                         Gender
                        </div>
                     <select name="" id="gender">
-                        <option disabled  >Select Gender</option>
+                        <option >Select Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                     </select>
@@ -165,9 +165,9 @@
                         <option disabled  >Select Status</option>
                         <option value="Algerian">Algerian</option>
                         <option value="Angolan">Angolan</option>
-                        <option value="Benin">Divorced</option>
-                        <option value="Nigeria">Separated</option>
-                        <option value="Egypt">Widowed</option>
+                        <option value="Benin">Nigerian</option>
+                        <option value="Nigeria">Ghanaian</option>
+                        <option value="Egypt">Egyptian</option>
                     </select>
                     
                 </div>
@@ -224,7 +224,7 @@
                      Local Govt.
                     </div>
                     <select name="" id="lga">
-                        <option value="Select LGA..." disabled="disabled" selected="selected">
+                        <option value="Select LGA..." disabled="disabled" >
                           Select LGA...
                         </option>
                         <optgroup label="Abia">
@@ -383,7 +383,7 @@
                        Religion
                     </div>
                    <select name="" id="religion">
-                    <option disabled selected value="">Religion</option>
+                    <option disabled  value="">Religion</option>
                     <option value="Christianity">Christianity</option>
                     <option value="Islam">Islam</option>
                     <option value="Hinduism">Hinduism</option>
@@ -405,7 +405,7 @@
                      ID Type
                     </div>
                    <select name="" id="id">
-                    <option disabled selected value="">ID type</option>
+                    <option disabled  value="">ID type</option>
                     <option value="National Identification Number">NIN</option>
                     <option value="Bank Verification No.">BVN</option>
                     <option value="International Passport">International Passport</option>
@@ -428,7 +428,7 @@
                        How did you hear about us?
                     </div>
                     <select name="" id="hear">
-                        <option disabled selected value="">Select Option</option>
+                        <option disabled  value="">Select Option</option>
                         <option value="Advertisments">Advertisments</option>
                         <option value="Social Media">Social Media</option>
                         <option value="Friends">Friends</option>
@@ -524,14 +524,18 @@
       document.getElementById('mname').value = localStorage.getItem('middlename')
      document.getElementById('sname').value = localStorage.getItem('surname')
       document.getElementById('pnum').value = localStorage.getItem('phonenumber')
-          mail = document.getElementById('mail').value = localStorage.getItem('email')
-          Dob = document.getElementById('Dob').value = localStorage.getItem('Date of birth')
-          maiden = document.getElementById('maiden').value = localStorage.getItem('Mother maiden name')
-           id = document.getElementById('id type')
-          idnum = document.getElementById('idnum').value = localStorage.getItem('id number')
-           hear = document.getElementById('hear').value = localStorage.getItem('Form of reference')
-          address = document.getElementById('address').value = localStorage.getItem('Address')
-
+         document.getElementById('mail').value = localStorage.getItem('email')
+           document.getElementById('Dob').value = localStorage.getItem('Date of birth')
+           document.getElementById('maiden').value = localStorage.getItem('Mother maiden name')
+            document.getElementById('id').value = localStorage.getItem('id type')
+           document.getElementById('idnum').value = localStorage.getItem('id number')
+            document.getElementById('hear').value = localStorage.getItem('Form of reference')
+           document.getElementById('address').value = localStorage.getItem('Address')
+           document.getElementById('gender').value = localStorage.getItem('Gender')
+           document.getElementById('status').value = localStorage.getItem('Marital Status')
+           document.getElementById('religion').value = localStorage.getItem('Religion')
+           document.getElementById('lga').value = localStorage.getItem('LGA')
+           document.getElementById('nationality').value = localStorage.getItem('Nationality')
       }
       autofill();
 </script>
