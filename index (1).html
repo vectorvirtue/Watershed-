@@ -52,8 +52,9 @@
 
     function loginfunc() {
 
-      const correctemail = 'test@gmail.com'
-      const correctpassword = 'test'
+
+      const correctemail = localStorage.getItem('email')
+      const correctpassword = localStorage.getItem('password')
       const username = document.getElementById("myemail").value
       const password = document.getElementById("mypassword").value
      const error = document.getElementById("error")
