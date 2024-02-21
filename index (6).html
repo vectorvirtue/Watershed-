@@ -24,24 +24,36 @@
             <div class="char">
                 First Name
             </div>
-            <input type="text" class="box" placeholder="First Name">
+            <input type="text" class="box" placeholder="First Name" id="name">
         </div>
         
         <div class="textfield">
             <div class="char">
                Last Name
             </div>
-            <input type="text" class="box" placeholder="Last Name">
+            <input type="text" class="box" placeholder="Last Name" id="lastname">
         </div>
         
         <div class="textfield">
             <div class="char">
                Email
             </div>
-            <input type="text" class="box" placeholder="Email">
+            <input type="text" class="box" placeholder="Email" id="mail">
+        </div>
+        <div class="textfield">
+            <div class="char">
+               Password
+            </div>
+            <input type="password" class="box" placeholder="......" id="password">
+        </div>
+        <div class="textfield">
+            <div class="char">
+               Username
+            </div>
+            <input type="text" class="box" placeholder="Username" id="usname">
         </div>
         
-        <div class="textfield">
+        <!-- <div class="textfield">
             <div class="char">
                 Phone Number
             </div>
@@ -54,8 +66,8 @@
              
             </div>
          </div>
-        </div>
-        <div class="atype">
+        </div> -->
+        <!-- <div class="atype">
             <div class="char">Account Type</div>
             <div class="types">
                 <div class="button">
@@ -79,11 +91,42 @@
                    Corporate
                 </div>
             </div>
-        </div>
-        <div class="primary"><a href="index (2).html">Sign Up</a></div>
+        </div> -->
+        <div class="primary" onclick="register()"><a href="#">Sign Up</a></div>
         <div class="span">
             Already have an account? <span><a href="index (1).html">Login</a></span>
         </div>
     </div>
+
+    <script>
+        function register(){
+         const myname = document.getElementById('name').value
+         const lastname = document.getElementById('lastname').value
+         const email = document.getElementById('mail').value
+         const password = document.getElementById('password').value
+         const username = document.getElementById('usname').value
+        const updated = 'false'
+
+         if (myname && lastname &&  email && password && username ) {
+            localStorage.setItem('firstname', myname)
+        localStorage.setItem('lastname', lastname)
+        localStorage.setItem('email', email)
+        localStorage.setItem('password', password)
+        localStorage.setItem('username', username)
+        localStorage.setItem('profileupdated', updated)
+        alert('registration Complete')
+        window.location.href = 'index (1).html'
+         } else {
+            alert('Kindly fill all fields')
+         }
+
+
+    
+
+
+      
+
+        }
+    </script>
 </body>
 </html>

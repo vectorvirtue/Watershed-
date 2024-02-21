@@ -19,31 +19,48 @@
             <div class="su">Activate Account</div>
             <div class="kd">Input the correct details below to activate your account</div>
         </div>
-
+          
 <div class="atype">
     <div class="textfield">
         <div class="char">
             Email Address
         </div>
-        <input type="text" class="box" placeholder="Email">
+        <input type="text" class="box" placeholder="Email" id="myemail">
     </div>
     <div class="textfield">
         <div class="char">
           Password
         </div>
-        <input type="text" class="box" placeholder="..........">
+        <input type="text" class="box" placeholder=".........." id="mypassword">
     </div>
     <div class="textfield">
         <div class="char">
            Re-Confirm Password
         </div>
-        <input type="text" class="box" placeholder="..........">
+        <input type="text" class="box" placeholder=".........." id="repassword">
     </div>
 </div>
-        <div class="primary"><a href="index.html">Sign Up</a></div>
+        <div class="primary" onclick="activate()"><a href="#">Sign Up</a></div>
         <div class="span">
            Don't have an account? <span><a href="index (5).html">Create Account</a></span>
         </div>
         </div>
 </body>
+<script>
+    function activate(){
+        const myemail = 'amaugofaith@gmail.com'
+        const mypassword = 'mikrokosmos'
+        const repassword = 'mikrokosmos'
+        const email = document.getElementById("myemail").value
+        const password = document.getElementById("mypassword").value
+        const repeat = document.getElementById("mypassword").value
+
+        if (myemail == email & mypassword == password & repassword == repeat ) {
+            window.location.href = 'index.html'
+        } else {
+          alert('Incorrect Data')
+          error.classList.add('errorshow')
+        }
+    }
+</script>
 </html>

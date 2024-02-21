@@ -123,6 +123,7 @@ input{
 .boxone
 {
     width: 30%;
+    height:190vh;
     background: #E5EDEA;
     display: flex;
     flex-direction: column;
@@ -286,5 +287,39 @@ margin-left: -48px;
     display: flex;
 }
 .displays img{
-    width: 100vh;
+    width: 9.84px;
+    height: 6.59px;
+    
+    margin-left: -38px;
+        margin-top: 20px;
+}
+
+
+.textfield2{
+   margin-left: -25px;
+}
+
+.vector{
+    display: flex;
+    
+}
+
+.vector img{
+    width: 20px;
+    height: 19px;
+    margin-top: 10px;
+    margin-left: -48px;
+}
+
+
+.login a{
+    background-color: #007146;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 10%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 5px;
 }
