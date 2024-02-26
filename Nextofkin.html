@@ -169,7 +169,7 @@ const relationship = document.getElementById('relationship').value
 const phonenumber = document.getElementById('phonenumber').value
 const emailaddress = document.getElementById('emailaddress').value
 const residentialaddress = document.getElementById('residentialaddress').value
-const updated ='true'
+const updated ='false'
 
 if (name && gender && nationality && relationship && phonenumber && emailaddress ) {
     
@@ -181,7 +181,7 @@ if (name && gender && nationality && relationship && phonenumber && emailaddress
         localStorage.setItem('emailaddress', emailaddress)
         localStorage.setItem('residentialaddress',residentialaddress )
         alert('registration Complete')
-         window.location.href = 'bankinfo.html'
+         window.location.href = 'dashboard.html'
 } else {
     alert('Kindly fill all fields') 
 }
