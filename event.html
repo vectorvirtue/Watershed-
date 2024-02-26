@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<form action="" id="myform">
+<a href="">snhshshhs</a>
+<input type="text" name="" id="" required>
+    
+    <button id="mybtn" >ALERT</button>
+</form>
+
+
+
+
+    <script>
+const myform = document.getElementById('myform')
+myform.addEventListener('submit', payWithPaystack )
+
+function payWithPaystack(e) {
+  e.preventDefault();
+  victor()
+}
+
+const btn = document.getElementById('mybtn');
+btn.addEventListener("click", victor);
+
+        function victor(){
+            alert('hello')
+        }
+    </script>
+
+</body>
+</html>
