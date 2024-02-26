@@ -89,25 +89,25 @@
                <div class="details3">
                 <div class="textfield">
                     <div class="char">
-                       Occupation
+                       occupation
                     </div>
-                    <input type="text" class="boxing" placeholder="Occupation">
+                    <input type="text" class="boxing" placeholder="occupation" id="occupation">
                 </div>
 
                 <div class="textfield2">
                     <div class="char">
                      Employer
                     </div>
-                    <input type="text" class="boxing" placeholder="Employer">
+                    <input type="text" class="boxing" placeholder="Employer" id="employer">
                 </div>
                </div>
 
                <div class="details3">
                 <div class="textfield">
                     <div class="char">
-                     Source ofIncome
+                     sourceofincome
                     </div>
-                    <input type="text" class="boxing" placeholder="Source of Income ">
+                    <input type="text" class="boxing" placeholder="sourceofincome " id="sourceofincome">
                 </div>
                
                 <div class="textfield2">
@@ -115,7 +115,7 @@
                      Risk Tolerance
                     </div>
                    <div class="displays">
-                    <input type="text" class="boxing" placeholder="Select Risk Tolerance">   <img src="Vector (3).png" alt="">
+                    <input type="text" class="boxing" placeholder="Select Risk Tolerance" id="risktolerance">   <img src="Vector (3).png" alt="">
                    </div>
                     
                 </div>
@@ -126,23 +126,23 @@
                <div class="details3">
                 <div class="textfield">
                     <div class="char">
-                   Office Address
+                   officeAddress
                     </div>
-                    <input type="text" class="boxing" placeholder="Office Address">
+                    <input type="text" class="boxing" placeholder="officeAddress" id="officeAddress">
                 </div>
                 <div class="textfield2">
                     <div class="char">
-                   Investment Objective
+                   InvestmentObjective
                     </div>
-                    <input type="text" class="boxing" placeholder="Investment Objective">
+                    <input type="text" class="boxing" placeholder="InvestmentObjective" id="InvestmentObjective">
                 </div>
                </div>
               
                
              
                 </div>
-                <div class="login">
-                    <a href="bankinfo.html">Proceed</a>
+                <div class="login"  onclick="investmentinfo()">
+                    Proceed
                   </div>
             </div>
         </div>
@@ -150,5 +150,35 @@
 </div>
 </body>
 </html>
+
+
+<script>
+ function investmentinfo(){
+        const occupation = document.getElementById('occupation').value 
+const  employer = document.getElementById('employer').value
+const sourceofincome = document.getElementById('sourceofincome').value
+const risktolerance = document.getElementById('risktolerance').value
+const officeaddress = document.getElementById('officeAddress').value
+const InvestmentObjective = document.getElementById('InvestmentObjective').value
+const updated = 'false'
+
+
+if (occupation  ) {
+
+        localStorage.setItem('occupation', occupation )
+         localStorage.setItem('employer', employer)
+        localStorage.setItem('sourceofincome', sourceofincome)
+        localStorage.setItem('risktolerance', risktolerance)
+         localStorage.setItem('officeaddress', officeaddress)
+        localStorage.setItem('InvestmentObjective', InvestmentObjective)
+        localStorage.setItem('profileupdated', updated)
+        alert('registration Complete')
+         window.location.href = 'bankinfo.html'
+    } else {
+        alert('Kindly fill all fields')          
+         }
+    }
+
+</script>
 </body>
 </html>
