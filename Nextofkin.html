@@ -44,10 +44,10 @@
 
              </div>
              <div class="bim">
-                <div class="numb">
+                <div class="num">
                    2
                 </div>
-                <div class="pin"><b>Investment     Information</b></div>
+                <div class="pin"><b>Investment Information</b></div>
                </div>
                <div class="lines">
                    <div class="line"></div>
@@ -81,41 +81,41 @@
            </div>
         </div>
         <div class="boxtwo">
-            <h1>Investment Information</h1>
+            <h1>Next of Kin</h1>
             <div class="instruct">
-                Enter your Investment Information to update your profile
+                Enter your Next of Kin
             </div>
             <div class="details2">
                <div class="details3">
                 <div class="textfield">
                     <div class="char">
-                       occupation
+                    name
                     </div>
-                    <input type="text" class="boxing" placeholder="occupation" id="occupation">
+                    <input type="text" class="boxing" placeholder="name" id="name">
                 </div>
 
                 <div class="textfield2">
                     <div class="char">
-                     Employer
+                  gender
                     </div>
-                    <input type="text" class="boxing" placeholder="Employer" id="employer">
+                    <input type="text" class="boxing" placeholder="gender" id="gender"> <img src="Vector (3).png" alt="">
                 </div>
                </div>
 
                <div class="details3">
                 <div class="textfield">
                     <div class="char">
-                     sourceofincome
+                     nationality
                     </div>
-                    <input type="text" class="boxing" placeholder="sourceofincome " id="sourceofincome">
+                    <input type="text" class="boxing" placeholder="nationality" id="nationality"> <img src="Vector (3).png" alt="">
                 </div>
                
                 <div class="textfield">
                     <div class="char">
-                     Risk Tolerance
+                    relationship
                     </div>
                    <div class="displays">
-                    <input type="text" class="boxing" placeholder="Select Risk Tolerance" id="risktolerance">   <img src="Vector (3).png" alt="">
+                    <input type="text" class="boxing" placeholder="relationship" id="relationship">   
                    </div>
                     
                 </div>
@@ -126,59 +126,66 @@
                <div class="details3">
                 <div class="textfield">
                     <div class="char">
-                   officeAddress
+                  phonenumber
                     </div>
-                    <input type="text" class="boxing" placeholder="officeAddress" id="officeAddress">
+                    <input type="text" class="boxing" placeholder="phonenumber" id="phonenumber">
                 </div>
                 <div class="textfield2">
                     <div class="char">
-                   InvestmentObjective
+                   emailaddress
                     </div>
-                    <input type="text" class="boxing" placeholder="InvestmentObjective" id="InvestmentObjective">
+                    <input type="text" class="boxing" placeholder="emailaddress" id="emailaddress">
                 </div>
                </div>
               
                
+               <div class="details3">
+                <div class="textfield">
+                    <div class="char">
+                 residentialaddress
+                    </div>
+                    <input type="text" class="boxing" placeholder=" residentialaddress" id="residentialaddress">
+                </div>
+               
+               </div>
              
                 </div>
-                <div class="login"  onclick="investmentinfo()">
+                <div class="login"  onclick="Nextofkin()">
                     Proceed
                   </div>
             </div>
         </div>
     </div>
 </div>
-</body>
-</html>
+
 
 
 <script>
- function investmentinfo(){
-        const occupation = document.getElementById('occupation').value 
-const  employer = document.getElementById('employer').value
-const sourceofincome = document.getElementById('sourceofincome').value
-const risktolerance = document.getElementById('risktolerance').value
-const officeaddress = document.getElementById('officeAddress').value
-const InvestmentObjective = document.getElementById('InvestmentObjective').value
-const updated = 'false'
+    function Nextofkin(){
+const name = document.getElementById('name').value
+const gender = document.getElementById('gender').value
+const nationality = document.getElementById('nationality').value
+const relationship = document.getElementById('relationship').value
+const phonenumber = document.getElementById('phonenumber').value
+const emailaddress = document.getElementById('emailaddress').value
+const residentialaddress = document.getElementById('residentialaddress').value
+const updated ='true'
 
-
-if (occupation  ) {
-
-        localStorage.setItem('occupation', occupation )
-         localStorage.setItem('employer', employer)
-        localStorage.setItem('sourceofincome', sourceofincome)
-        localStorage.setItem('risktolerance', risktolerance)
-         localStorage.setItem('officeaddress', officeaddress)
-        localStorage.setItem('InvestmentObjective', InvestmentObjective)
-        localStorage.setItem('profileupdated', updated)
+if (name && gender && nationality && relationship && phonenumber && emailaddress ) {
+    
+    localStorage.setItem('name', name )
+         localStorage.setItem('gender', gender)
+        localStorage.setItem('nationality', nationality)
+        localStorage.setItem('relationship', relationship)
+         localStorage.setItem('phonenumber', phonenumbber)
+        localStorage.setItem('emailaddress', emailaddress)
+        localStorage.setItem('residentialaddress',residentialaddress )
         alert('registration Complete')
          window.location.href = 'bankinfo.html'
-    } else {
-        alert('Kindly fill all fields')          
-         }
+} else {
+    alert('Kindly fill all fields') 
+}
     }
-
 </script>
 </body>
 </html>
