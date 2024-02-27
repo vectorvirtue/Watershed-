@@ -94,10 +94,10 @@
                             </div>
                            </div>
                            <div class="flex">
-                            <div class="date" id="rate">
+                            <div class="date" >
                                 Rate
                             </div>
-                            <div class="num" id="tenure" >
+                            <div class="num" id="rate">
                               
                             </div>
                            </div>
@@ -105,7 +105,7 @@
                             <div class="date" >
                                 Tenure
                             </div>
-                            <div class="num">
+                            <div class="num" id="tenure">
                                
                             </div>
                            </div>
@@ -123,6 +123,10 @@
                 </div>
             </div>
         </div>
+       <div class="down">
+        <button>Download</button>
+        <img src="Vector (7).png" alt="">
+       </div> 
    
         <script>
             function storage(){
@@ -131,10 +135,13 @@
                 const tenure = document.getElementById('tenure')
                 const amtpay = document.getElementById('amtpay')
 
-
-                const stored = localStorage.getitem('Principal')
-                document.getElementById('amount').value = stored
-            }
+                    
+               
+                document.getElementById('amount').innerHTML = localStorage.getItem('Principal')
+                document.getElementById('rate').innerHTML = localStorage.getItem('Interest')
+                document.getElementById('tenure').innerHTML = localStorage.getItem('Tenure')
+                document.getElementById('amtpay').innerHTML = localStorage.getItem('Total amount')
+            }storage()
         </script>
 </body>
 </html>

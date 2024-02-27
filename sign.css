@@ -120,7 +120,7 @@ flex-direction: column;
 padding: 30px;
 font-family: Roboto;
 margin-top: 32px;
-margin-left: 30px;
+margin-left: 91px;
 }
 
 .pt1{
@@ -209,16 +209,44 @@ left: 894.4px;
 }
 
 
-button{
+ button{
     background-color: #007146;
     color: whitesmoke;
     outline: none;
     border: none;
     font-size: 18px;
     border-radius: 4px;
-    width: 100%;
+    padding: 5px;
+     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+}
+
+.down{
+    display: flex;
+    align-items: center;
+    width: 195px;
+height: 40px;
+padding: 10px, 49.5px, 10px, 49.5px;
+border-radius: 3px;
+width: 12%;
+    background-color: #007146;
+    border-radius: 4px;
+    margin-top: 20px;
+   margin-left: 1400px;
+   padding-inline: 50px;
+}
+ .down button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+ }
+
+.down img{
+    width: 13px;
+    height: 13px;
+    margin-left: -46px;
 }
