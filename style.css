@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'poppins';
 }
 
 
@@ -432,7 +433,6 @@ color: #fff;
     display: flex;
     align-items: center;
     gap: 50px;
-    justify-content: end;
     padding-bottom: 30px;
     margin-right: 66px;
 }
@@ -481,8 +481,6 @@ select{
 .details3{
     display: flex;
     gap: 40px;
-    align-items: end;
-    justify-content: end;
     margin-right: 62px;
 }
 
@@ -518,3 +516,28 @@ width: 12%;
     color: #4A4A4AF0;
     font-family: Poppins;
  }
+
+ 
+
+ 
+.myflex{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 30px;
+    margin-left: 397px;
+}
+  .flexitem{
+    font-weight: 500;
+    font-size: 22px;
+  }
+.detailes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 47px;
+}
+
+.details2{
+    margin-right: 479px;
+}
