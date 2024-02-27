@@ -485,3 +485,36 @@ select{
     justify-content: end;
     margin-right: 62px;
 }
+
+.down{
+    display: flex;
+    align-items: center;
+    width: 195px;
+height: 40px;
+padding: 10px, 49.5px, 10px, 49.5px;
+border-radius: 3px;
+width: 12%;
+    background-color: #007146;
+    border-radius: 4px;
+    margin-top: 20px;
+   margin-left: 1400px;
+   padding-inline: 85px;
+   
+}
+ .down button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+ }
+
+ .boxing{
+    color: #4A4A4AF0;
+    font-family: Poppins;
+ }
