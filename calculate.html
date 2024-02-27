@@ -8,18 +8,42 @@
 </head>
 <body>
     <h1>Simple Interest Calculator</h1>
+    <div class="form">
+        <div class="creativeform">
+            <div class="create">
+                <div class="num">
+                    1
+                 </div>
+                 <div class="title">
+                    Create Investment
+                </div>
+            </div>
+
+            <div class="invest">
+                <div class="numb">
+                    2
+                 </div>
+                 <div class="title">
+                    Investment Overview
+                </div>
+            </div>
+            
+        </div>
+        <h3>Naira Investment (Stocks)</h3>
+
+        
 
     <div class="calculator">
-        <div class="pclass">
-            <div class="principal"><h3>Principal</h3>
+        <div class="details3">
+            <div class="char"><h3>Principal</h3>
             </div>
             <div class="input">
                 <input type="text"  value="$" id="principal">
             </div>
         </div>
 
-        <div class="iclass">
-            <div class="interest">
+        <div class="details3">
+            <div class="char">
                 <h3>Interest Rate</h3>
             </div>
             <div class="irate">
@@ -36,8 +60,8 @@
             </div>
         </div>
 
-        <div class="tclass">
-            <div class="term">
+        <div class="details">
+            <div class="char">
                 <h3>Term</h3>
             </div>
             <div class="iterm">
@@ -54,20 +78,23 @@
         </div>
         <button onclick="calculate()"> Calculate</button>
 
-        <div class="simpinterest" id="simp">
-            Your balance is
+        <div class="simpinterest" >
+           <div class="char"><h3>Interest Amount</h3></div>
+           <input type="text" id="sint">
         </div>
     </div>
 
+    </div>
+    
     <script>
         function calculate(){
-        const principal = document.getElementById('principal') .value
-        const rate = document.getElementById('rate') .value
-        const time = document.getElementById('time') .value
+        const principal = document.getElementById('principal').value
+        const rate = document.getElementById('rate').value
+        const time = document.getElementById('time').value
 
         const simpleinterest = parseInt(principal) * parseInt(rate) * parseInt(time) / 100
-
-        const simp = document.getElementById('simp') .value = simpleinterest
+  
+         document.getElementById('sint').value = simpleinterest
 
 
         }
