@@ -361,6 +361,22 @@ select{
         padding: 103px;
             
         }
+
+    
+            button{
+                background-color: #007146;
+                color: whitesmoke;
+                outline: none;
+                border: none;
+                font-size: 18px;
+                border-radius: 4px;
+              
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px;
+            }
+        
         
    
     

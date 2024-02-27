@@ -150,9 +150,7 @@
                </div>
              
                 </div>
-                <div class="login"  onclick="Nextofkin()">
-                    Proceed
-                  </div>
+              <button onclick="Nextofkin()">Proceed</button>
             </div>
         </div>
     </div>
@@ -169,19 +167,19 @@ const relationship = document.getElementById('relationship').value
 const phonenumber = document.getElementById('phonenumber').value
 const emailaddress = document.getElementById('emailaddress').value
 const residentialaddress = document.getElementById('residentialaddress').value
-const updated ='false'
+const updated ='true'
 
-if (name && gender && nationality && relationship && phonenumber && emailaddress ) {
+if (name && gender && nationality && relationship && phonenumber && emailaddress && residentialaddress ) {
     
     localStorage.setItem('name', name )
          localStorage.setItem('gender', gender)
         localStorage.setItem('nationality', nationality)
         localStorage.setItem('relationship', relationship)
-         localStorage.setItem('phonenumber', phonenumbber)
+         localStorage.setItem('phonenumber', phonenumber)
         localStorage.setItem('emailaddress', emailaddress)
         localStorage.setItem('residentialaddress',residentialaddress )
         alert('registration Complete')
-         window.location.href = 'dashboard.html'
+         window.location.href = 'update.html'
 } else {
     alert('Kindly fill all fields') 
 }
