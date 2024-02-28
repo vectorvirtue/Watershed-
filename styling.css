@@ -378,6 +378,47 @@ select{
                 padding: 5px;
             }
         
-        
+            .profile{
+                background-color: rgba(187, 214, 203, 1);
+                height: 30%;
+                display: flex;
+               min-height: 30%;
+               width: 1240px
+         
+             }
+             .header{
+          background-image: url(Rectangle\ 130.png);
+          justify-content: center;
+          display: flex;
+             }
+             .personalinformation{
+                 color: green;
+                 font-size: 20px;
+             }
+             .investmentinformaton{
+                 font-size: 20px;
+             }
+             .bankinformation{
+                 font-size: 20px;
+             }
+             .Nextofkin{
+                 font-size: 20px;
+             }
+             .status{
+                 display: flex;
+                 flex-direction: row;
+                 gap: 10px;
+             }
+             .section1{
+                 margin-left: 25%; 
+             }
+             .name{
+                 font-size: 24px;
+             }
+             .Options{
+                 display: flex;
+                 flex-direction: row;
+                 gap: 30px;
+             }       
    
     
