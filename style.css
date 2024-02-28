@@ -556,3 +556,11 @@ span button{
     text-decoration: underline;
 
 }
+
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 17px;}

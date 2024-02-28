@@ -31,13 +31,13 @@
         <div class="char">
           Password
         </div>
-        <input type="text" class="box" placeholder=".........." id="mypassword">
+        <input type="password" class="box" placeholder=".........." id="mypassword">
     </div>
     <div class="textfield">
         <div class="char">
            Re-Confirm Password
         </div>
-        <input type="text" class="box" placeholder=".........." id="repassword">
+        <input type="password" class="box" placeholder=".........." id="repassword">
     </div>
 </div>
         <div class="primary" onclick="activate()"><a href="#">Sign Up</a></div>
@@ -49,11 +49,11 @@
 <script>
     function activate(){
         const myemail = 'amaugofaith@gmail.com'
-        const mypassword = 'mikrokosmos'
-        const repassword = 'mikrokosmos'
+        const mypassword = 'test'
+        const repassword = 'test'
         const email = document.getElementById("myemail").value
         const password = document.getElementById("mypassword").value
-        const repeat = document.getElementById("mypassword").value
+        const repeat = document.getElementById("repassword").value
 
         if (myemail == email & mypassword == password & repassword == repeat ) {
             window.location.href = 'activated.html'
