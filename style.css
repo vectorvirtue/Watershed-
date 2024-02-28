@@ -541,3 +541,18 @@ width: 12%;
 .details2{
     margin-right: 479px;
 }
+
+span button{
+    background-color: transparent;
+   margin-left: 20px;
+    color: #000;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 900;
+    text-decoration: underline;
+
+}

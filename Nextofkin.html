@@ -98,7 +98,11 @@
                     <div class="char">
                   Gender
                     </div>
-                    <input type="text" class="boxing" placeholder="gender" id="gender"> <img src="Vector (3).png" alt="">
+                    <select name="" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                       
+                    </select>
                 </div>
                </div>
 
@@ -107,7 +111,11 @@
                     <div class="char">
                      Nationality
                     </div>
-                    <input type="text" class="boxing" placeholder="nationality" id="nationality"> <img src="Vector (3).png" alt="">
+                    <select name="" id="nationality">
+                        <option value="Nigerian">Nigerian</option>
+                        <option value="Angolan">Angolan</option>
+                        <option value="Egyptian">Egyptian</option>
+                    </select>
                 </div>
                
                 <div class="textfield2">
@@ -173,13 +181,14 @@ const updated ='true'
 
 if (name && gender && nationality && relationship && phonenumber && emailaddress && residentialaddress ) {
     
-    localStorage.setItem('name', name )
+         localStorage.setItem('name', name )
          localStorage.setItem('gender', gender)
         localStorage.setItem('nationality', nationality)
         localStorage.setItem('relationship', relationship)
          localStorage.setItem('phonenumber', phonenumber)
         localStorage.setItem('emailaddress', emailaddress)
-        localStorage.setItem('residentialaddress',residentialaddress )
+        localStorage.setItem('residentialaddress', residentialaddress )
+        localStorage.setItem('profileupdated', updated)
         alert('registration Complete')
          window.location.href = 'update.html'
 } else {
