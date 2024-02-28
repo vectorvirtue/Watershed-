@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+        #bloglist{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 40px;
+        }
+        .myblog{
+            border: 1px solid #ccc;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 40%;
+            background-color: bisque;
+        }
+    </style>
+    <br>
+    <br>
+    <br>
+
+    <div  id="bloglist">
+
+    </div>
+
+    <button onclick="myblog()">bjbjb</button>
+
+
+
+
+<script>
+
+function myblog (){
+
+    const blogPosts = [
+    {
+        title: "The Art of Coding",
+        shortDescription: "Exploring the beauty and creativity in programming.",
+        description: "Coding is not just about logic and syntax; it's a form of art. In this post, we delve into the artistic aspects of coding, from elegant algorithms to well-designed user interfaces.",
+        author: "Alice Programmer"
+    },
+    {
+        title: "Machine Learning Demystified",
+        shortDescription: "Understanding the basics of machine learning for beginners.",
+        description: "Machine learning can seem complex, but it doesn't have to be intimidating. This post breaks down the core concepts of machine learning in a beginner-friendly way, covering algorithms, training models, and real-world applications.",
+        author: "Bob Data Scientist"
+    },
+    {
+        title: "The Future of Space Exploration",
+        shortDescription: "Unveiling the possibilities and challenges in the next frontier.",
+        description: "As technology advances, so does our ability to explore the cosmos. From Mars missions to interstellar travel, this post discusses the exciting future of space exploration, along with the hurdles we must overcome.",
+        author: "Carol Space Enthusiast"
+    },
+    {
+        title: "Healthy Habits for Remote Workers",
+        shortDescription: "Tips for maintaining physical and mental well-being while working remotely.",
+        description: "Remote work has become the norm for many, but it comes with its own set of challenges. Learn how to establish a healthy work-life balance, stay physically active, and foster mental well-being while working from home.",
+        author: "David RemoteWorker"
+    },
+    {
+        title: "Cooking Adventures: Global Cuisine at Home",
+        shortDescription: "Embark on a culinary journey with these international recipes.",
+        description: "Unable to travel? Bring the world to your kitchen! Explore diverse flavors and culinary traditions from different countries with these delicious recipes. Get ready for a taste bud adventure!",
+        author: "Eva FoodieExplorer"
+    },
+    {
+        title: "Machine Learning Demystified",
+        shortDescription: "Understanding the basics of machine learning for beginners.",
+        description: "Machine learning can seem complex, but it doesn't have to be intimidating. This post breaks down the core concepts of machine learning in a beginner-friendly way, covering algorithms, training models, and real-world applications.",
+        author: "Bob Data Scientist"
+    },
+    {
+        title: "The Future of Space Exploration",
+        shortDescription: "Unveiling the possibilities and challenges in the next frontier.",
+        description: "As technology advances, so does our ability to explore the cosmos. From Mars missions to interstellar travel, this post discusses the exciting future of space exploration, along with the hurdles we must overcome.",
+        author: "Carol Space Enthusiast"
+    },
+    {
+        title: "Healthy Habits for Remote Workers",
+        shortDescription: "Tips for maintaining physical and mental well-being while working remotely.",
+        description: "Remote work has become the norm for many, but it comes with its own set of challenges. Learn how to establish a healthy work-life balance, stay physically active, and foster mental well-being while working from home.",
+        author: "David RemoteWorker"
+    },
+    {
+        title: "Cooking Adventures: Global Cuisine at Home",
+        shortDescription: "Embark on a culinary journey with these international recipes.",
+        description: "Unable to travel? Bring the world to your kitchen! Explore diverse flavors and culinary traditions from different countries with these delicious recipes. Get ready for a taste bud adventure!",
+        author: "Eva FoodieExplorer"
+    }
+
+    
+];
+
+const myposts =blogPosts.map(function(hjshshshhshshs) {
+    return `
+        <div class="myblog"> 
+        <h1> ${hjshshshhshshs.title} </h1>
+        <p> ${hjshshshhshshs.shortDescription} </P>
+            <small>Author: ${hjshshshhshshs.author}  </small>
+        </div>` 
+})
+
+var contactListHTML = myposts.join("");
+
+
+const mylist = document.getElementById('bloglist')
+
+
+mylist.innerHTML = contactListHTML;
+}
+
+
+
+
+
+
+
+function contact (){
+
+const blog = [
+    {title: "TITLE ONE", description: ' djdjd djdhdhd dhdhahda dhdahda dhhahdh'    },
+    {title: "TITLE Two", description: ' djdjd djdhdhd dhdhahda dhdahda dhhahdh'    },
+    {title: "TITLE Three", description: ' djdjd djdhdhd dhdhahda dhdahda dhhahdh'    },
+    {title: "TITLE Four", description: ' djdjd djdhdhd dhdhahda dhdahda dhhahdh'    }
+];
+
+const myposts =blog.map(function(laptops) {
+    return `<div> ${laptops.title} </div>` 
+})
+
+var contactListHTML = myposts.join("");
+
+
+const mylist = document.getElementById('bloglist')
+
+
+mylist.innerHTML = contactListHTML;
+}
+
+
+function mydata(){
+
+
+
+    var contacts = [
+    { name: "John Doe", phone: "555-1234" },
+    { name: "Jane Smith", phone: "555-5678" },
+    { name: "Bob Johnson", phone: "555-9876" }
+    // Add more entries as needed
+];
+
+// Using Array.map to create an array of HTML strings
+var contactHTMLArray = contacts.map(function(contact) {
+    return "<div>Name: " + contact.name + ", Phone: " + contact.phone + "</div>";
+});
+
+// Joining the array into a single string
+var contactListHTML = contactHTMLArray.join("");
+
+// Appending the HTML to the container div
+var contactListDiv = document.getElementById("contactList");
+contactListDiv.innerHTML = contactListHTML;
+}
+
+</script>
+
+</body>
+</html>
