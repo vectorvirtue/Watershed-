@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    
+        <header>
+            <div class="logo">
+                <img src="WFL LOGO (1).png" alt="">
+            </div>
+
+            <div class="daf">
+                <div class="d">Dashboard</div>
+                <div class="a">Account Statement</div>
+                <div class="f">FAQ</div>
+            </div>
+
+            <div class="profile">
+                <div class="name">Ayomide Olubanji</div>
+                <div class="image"><img src="Ellipse 1 (1).png" alt=""></div>
+                <div class="vector">
+                    <img src="Vector (5).png" alt="">
+                </div>
+            </div>
+
+           
+        </header>
+
+
+
+        <div class="container">
+            <div class="one">
+                <div class="vec"><img src="Vector (6).png" alt=""></div>
+                <div class="invest">Investment Information</div>
+            </div>
+
+            <div class="two">
+                <div class="instrument">Instrument: Term Deposits</div>
+                <div class="line"></div>
+            </div>
+
+            <div class="dummytext">
+                Lörem ipsum lanangen pöras suprarade, blåkort Cecilia Isaksson. Sylyrat bäplak. Ajäbel nyhetsbok utom mir inklusive antikror om bägen. Mikrootrohet Fredrik Nilsson Inga Gunnarsson, autock på dide. Fuldelning es pören trer. Trest polyk: pertad. Tir fanönas dev men sohet, krorat Ove Håkansson. Kassalösa butiker epigess emedan maliga, inklusive diditolig men georat dilingar. Bektig derat nön morbidturism, samt Christina Blomqvist förutom sor. Demotes mobilzombie desadavis hexamuvis, salogi trelingar. Du kan vara drabbad. Ona kompetensutvisning analiga teocentrism ifall bedaktiga. Monokemi micro fulfillment center är krolar i friktionsfri handel. Varas vobba essa. Soligt tisk. Innovationsstödssystem fäfösam om diakanar topsa jägt. Lörem ipsum lanangen pöras suprarade, blåkort Cecilia Isaksson. Sylyrat bäplak. Ajäbel nyhetsbok utom mir inklusive antikror om bägen. Mikrootrohet Fredrik Nilsson Inga Gunnarsson, autock på dide. Fuldelning es pören trer. Trest polyk: pertad. Tir fanönas dev men sohet, krorat Ove Håkansson. Kassalösa butiker epigess emedan maliga, inklusive diditolig men georat dilingar. Bektig derat nön morbidturism, samt Christina Blomqvist förutom sor. Demotes mobilzombie desadavis hexamuvis, salogi trelingar. Du kan vara drabbad. 
+ 
+
+            </div>
+
+            <div class="rectangle">
+                <div class="bxone">
+                    <div class="pt1">
+                    <div class="display">
+                        <div class="flex">
+                            <div class="date">
+                                Investment Number
+                            </div>
+                            <div class="num">
+                                346577782
+                            </div>
+                           </div>
+                           
+                           <div class="flex2">
+                            <div class="date">Days Left</div>
+                           <div class="lines">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                           </div>
+                           </div>
+                    </div>
+                       <div class="line"></div>
+                    </div>
+
+
+
+
+                    <div class="pt2"><div class="display2">
+                        <div class="flex">
+                            <div class="date">
+                                Instrument
+                            </div>
+                            <div class="num">
+                               Term deposits
+                            </div>
+                           </div>
+                           <div class="flex">
+                            <div class="date" >
+                                Principal Amount
+                            </div>
+                            <div class="num"  id="amount">
+                              
+                            </div>
+                           </div>
+                           <div class="flex">
+                            <div class="date" >
+                                Rate
+                            </div>
+                            <div class="num" id="rate">
+                              
+                            </div>
+                           </div>
+                           <div class="flex">
+                            <div class="date" >
+                                Tenure
+                            </div>
+                            <div class="num" id="tenure">
+                               
+                            </div>
+                           </div>
+                           <div class="flex">
+                            <div class="date" >
+                              Total Amount
+                            </div>
+                            <div class="num"  id="amtpay">
+                             
+                            </div>
+                           </div>
+                          
+                    </div></div>
+                    <div class="pt3"></div>
+                </div>
+            </div>
+        </div>
+       <div class="down">
+        <button>Download</button>
+        <img src="Vector (7).png" alt="">
+       </div> 
+   
+        <script>
+            function storage(){
+                const amount = document.getElementById('amount')
+                const rate = document.getElementById('rate')
+                const tenure = document.getElementById('tenure')
+                const amtpay = document.getElementById('amtpay')
+
+                    
+               
+                document.getElementById('amount').innerHTML = localStorage.getItem('Principal')
+                document.getElementById('rate').innerHTML = localStorage.getItem('Interest')
+                document.getElementById('tenure').innerHTML = localStorage.getItem('Tenure')
+                document.getElementById('amtpay').innerHTML = localStorage.getItem('Total amount')
+            }storage()
+        </script>
+</body>
+</html>

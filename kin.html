@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="log">
+            <img src="WFL LOGO (1).png" alt="">
+        </div>
+    </header>
+
+    <div class="back">
+          
+    </div>
+
+
+    <div class="profile">
+        <img src="Ellipse 2.png" alt="">
+
+        
+         <div class="groups">
+            <div class="profile2">
+                Profile
+            </div>
+            <div class="name">
+                Oluwatosin Ajayi Blessing
+            </div>
+    
+           <div class="group">
+            <div class="st">
+                Status
+            </div>
+            <div class="app">
+                Approved
+            </div>
+           </div>
+         </div>
+       
+       
+    </div>
+
+    <div class="myflex">
+        <div class="flexitem">Personal Information
+            </div>
+
+            <div class="flexitem">Investment Information
+            </div>
+                <div class="flexitem">
+                    Bank Information
+                </div>
+
+
+                <div class="hm">
+                    <div class="flexitem">
+                        Next Of Kin
+                      </div>
+                      <div class="under">
+                        <div class="line"></div>
+                      </div>
+                  </div>
+       </div>
+   <div class="detailes">
+    <div class="details3">
+        <div class="textfield">
+            <div class="char">
+           Name
+            </div>
+            <input type="text" class="boxing" placeholder="Name" id="name">
+        </div>
+        <div class="textfield">
+            <div class="char">
+           Gender
+            </div>
+            <select name="" id="gender">
+                <option disabled selected >Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+               
+                
+            </select>
+            
+        </div>
+       </div>
+
+       <div class="details3">
+
+        <div class="textfield">
+            <div class="char">
+           Nationality
+            </div>
+            <select name="" id="ntn">
+                <option disabled selected >Select Nationality</option>
+               <option value="Nigerian">Nigerian</option>
+                
+            </select>
+            
+        </div>
+
+        <div class="textfield2">
+            <div class="char">
+        Relationship
+            </div>
+            <input type="text" class="boxing" placeholder="Relationship" id="rel">
+        </div>
+       </div>
+
+    <div class="details3">
+        <div class="textfield">
+            <div class="char">
+           Phone Number
+            </div>
+            <input type="text" class="boxing" placeholder="226 Airport Parkway, Ste. 428" id="pn">
+        </div>
+        <div class="textfield2">
+            <div class="char">
+          Email Address
+            </div>
+            <input type="text" class="boxing" placeholder="Investment Objective" id="mail">
+        </div>
+       </div>
+
+     <div class="details2">
+        <div class="textfield">
+            <div class="char">
+          Residential Address
+            </div>
+            <input type="text" class="boxing" placeholder="Residential Address" id="ra">
+        </div>
+     </div>
+
+   </div>
+       <div class="down">
+        <button>Save</button>
+        
+       </div> 
+
+       <script>
+        function profile ()
+        {
+            const gender = document.getElementById('gender').value
+            const name = document.getElementById('name').value
+            const ntn = document.getElementById('ntn').value
+            const rel = document.getElementById('rel').value
+            const pn = document.getElementById('pn').value
+            const ra = document.getElementById('ra').value
+            const mail = document.getElementById('mail').value
+
+            
+
+            document.getElementById('gender').value = localStorage.getItem('Gender')
+                document.getElementById('name').value = localStorage.getItem('name')
+                document.getElementById('ntn').value = localStorage.getItem('nationality')
+                document.getElementById('rel').value = localStorage.getItem('relationship')
+                document.getElementById('ra').value = localStorage.getItem('residentialaddress')
+                document.getElementById('pn').value = localStorage.getItem('phonenumber')
+                document.getElementById('mail').value = localStorage.getItem('emailaddress')
+        }profile();
+       </script>
+</body>
+</html>
