@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta productname="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<a href='https://www.figma.com/file/wXOBV95W79rGRMLLnv6u4a/Shopping-Ecommerce-Website-UI-Kit---UI8-(Community)?type=design&node-id=113%3A7674&mode=design&t=BXFQBGEB0g2WVY3p-1'>
+figma link
+</a>
+
+
+    <script>
+const mobilephones = [
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/397664/1.jpg?9493`,
+    productname: `XIAOMI Redmi Note 12 6.67'' 8GB 128GB ROM Android 13 - Onyx Gray`,
+    productprice: '₦ 150,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/204592/1.jpg?2015',
+    productname: `XIAOMI Redmi 10 2022 - 6.5" (4GB RAM, 128GB ROM) - Carbon Gray`,
+    productprice: '₦ 118,650'
+  },
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/909098/1.jpg?3607',
+    productname: 'XIAOMI Redmi Note 12 Pro 5G 8GB RAM 256GB ROM 6.67 Dual Sim',
+    productprice: '₦ 195,878'
+  },
+ 
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/8887922/1.jpg?2905`,
+    productname: `XIAOMI Redmi Note 12 6.67'' 8GB 128GB ROM Android 13 - Onyx Gray`,
+    productprice: '₦ 150,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/74/7067422/1.jpg?8486',
+    productname: `XIAOMI Redmi 10 2022 - 6.5" (4GB RAM, 128GB ROM) - Carbon Gray`,
+    productprice: '₦ 118,650'
+  },
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/7542032/1.jpg?3477',
+    productname: 'XIAOMI Redmi Note 12 Pro 5G 8GB RAM 256GB ROM 6.67 Dual Sim',
+    productprice: '₦ 195,878'
+  },
+ 
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/23/2037521/1.jpg?6055',
+    productname: ' Samsung Galaxy A73 5G - 6.7" 6GB/128GB Memory - White',
+    productprice: '₦ 370,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/7411722/1.jpg?5299',
+    productname: 'Samsung Galaxy A54 5G 6.4" 256GB/8GB Facial Recognition',
+    productprice: '₦ 315,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/1084132/1.jpg?4284',
+    productname: 'XIAOMI A1 Plus, 6.52" 4G LTE, 2GB/32GB Memory, Fingerprint, Face ID Recognition,',
+    productprice: '₦ 115,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/5017732/1.jpg?8724',
+    productname: 'itel P40 6.6" Screen, 64GB ROM + Up To 7GB RAM, 6000mAh 18W',
+    productprice: '₦ 65,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/87/2515032/1.jpg?4731',
+    productname: 'Tecno Spark 10- 6.6" - 8GB/128GB，50MP+Q Rear Camera，5000mAh-Black',
+    productprice: '₦ 95,878'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/397664/1.jpg?9493`,
+    productname: `XIAOMI Redmi Note 12 6.67'' 8GB 128GB ROM Android 13 - Onyx Gray`,
+    productprice: '₦ 150,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/204592/1.jpg?2015',
+    productname: `XIAOMI Redmi 10 2022 - 6.5" (4GB RAM, 128GB ROM) - Carbon Gray`,
+    productprice: '₦ 118,650'
+  },
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/909098/1.jpg?3607',
+    productname: 'XIAOMI Redmi Note 12 Pro 5G 8GB RAM 256GB ROM 6.67 Dual Sim',
+    productprice: '₦ 195,878'
+  },
+ 
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/73349/1.jpg?7805',
+    productname: ' Samsung Galaxy A73 5G - 6.7" 6GB/128GB Memory - White',
+    productprice: '₦ 370,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/40/037857/1.jpg?0943',
+    productname: 'Samsung Galaxy A54 5G 6.4" 256GB/8GB Facial Recognition',
+    productprice: '₦ 315,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/4571202/1.jpg?6274',
+    productname: 'XIAOMI A1 Plus, 6.52" 4G LTE, 2GB/32GB Memory, Fingerprint, Face ID Recognition,',
+    productprice: '₦ 115,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/7504971/1.jpg?1923',
+    productname: 'itel P40 6.6" Screen, 64GB ROM + Up To 7GB RAM, 6000mAh 18W',
+    productprice: '₦ 65,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/24/3796591/2.jpg?0919',
+    productname: 'Tecno Spark 10- 6.6" - 8GB/128GB，50MP+Q Rear Camera，5000mAh-Black',
+    productprice: '₦ 95,878'
+  },
+  {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/8887922/1.jpg?2905`,
+      productname: `Hp 15 Intel Celeron N4020 8GB RAM 1TB HDD 15.6" Wins 10 `,
+      productprice: '₦ 150,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/54/667128/1.jpg?5824`,
+      productname: `Hp Stream 11 Intel Celeron - 64GB SSD 4GB RAM Windows 10+ USB Light For Keyboard`,
+      productprice: '₦ 179,900'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/1356501/1.jpg?5301`,
+      productname: `Hp 15 Intel Celeron N4020 15.6" 8GB RAM/1TB HDD Win 10 + Mouse`,
+      productprice: '₦ 178,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/045718/1.jpg?0894`,
+      productname: `Hp 15 AMD RYZEN3 -12GB RAM 1TB HDD Wins 10Pro-2.6GHz To 3.5GHz`,
+      productprice: '₦ 229,500 '
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/79/3834601/1.jpg?1027`,
+      productname: `Hp Laptop 15 INTEL CELERON Quad Core 8GB RAM -1TB HDD Windows 11 + USB Light For Keyboard`,
+      productprice: '₦ 180,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/110387/1.jpg?5496`,
+      productname: `Hp Pavilion 14 - Intel Core I3 12GB RAM- 12TH GEN- 256GB SSD`,
+      productprice: '₦ 177,900'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/124177/1.jpg?9117`,
+      productname: `Hp Notebook 15- AMD RYZEN 3 - 16GB RAM/1TB HDD 2.6GH`,
+      productprice: '₦ 199,000 '
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/08/9607501/1.jpg?3525`,
+      productname: `Hp Stream 11 Pro- Intel Celeron - 4GB RAM - 64GB SSD Windows 10 Pro+ Mouse & USB LIGHT FOR Keyboard`,
+      productprice: '₦ 99,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/8819891/1.jpg?7592`,
+      productname: `Hp 250 G8 Intel Celeron Dualcore,8GB RAM,1TB HDD,Wins 10pro`,
+      productprice: '₦ 212,800 '
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/45/4607501/1.jpg?3064`,
+      productname: `Hp Stream 11 Pro- Intel Celeron - 4GB RAM - 64GB SSD Windows 10 Pro+ Mouse & USB LIGHT FOR Keyboard`,
+      productprice: '₦ 272,800  '
+    },
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/73349/1.jpg?7805',
+    productname: ' Samsung Galaxy A73 5G - 6.7" 6GB/128GB Memory - White',
+    productprice: '₦ 370,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/40/037857/1.jpg?0943',
+    productname: 'Samsung Galaxy A54 5G 6.4" 256GB/8GB Facial Recognition',
+    productprice: '₦ 315,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/4571202/1.jpg?6274',
+    productname: 'XIAOMI A1 Plus, 6.52" 4G LTE, 2GB/32GB Memory, Fingerprint, Face ID Recognition,',
+    productprice: '₦ 115,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/7504971/1.jpg?1923',
+    productname: 'itel P40 6.6" Screen, 64GB ROM + Up To 7GB RAM, 6000mAh 18W',
+    productprice: '₦ 65,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/24/3796591/2.jpg?0919',
+    productname: 'Tecno Spark 10- 6.6" - 8GB/128GB，50MP+Q Rear Camera，5000mAh-Black',
+    productprice: '₦ 95,878'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/2698201/1.jpg?5660`,
+    productname: `IPhone X 3GB RAM+64GB(Renewed) -Black`,
+    productprice: '₦ 174,500'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2698201/1.jpg?5628`,
+    productname: `IPhone X 3GB RAM+64GB (Renewed) -White`,
+    productprice: '₦ 176,500 '
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/36/931009/1.jpg?5328`,
+    productname: `IPhone 6 16GB(Refurbished) - Gold (Grade A)`,
+    productprice: '₦ 71,412'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/0477811/1.jpg?2168`,
+    productname: `IPhone 7 Plus 32GB+RAM3GB(Renewed-)-Black IPhone7P`,
+    productprice: '₦ 79,412'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/71/4956431/1.jpg?8817`,
+    productname: `Apple Iphone XR 64gb White, Free Pouch`,
+    productprice: '₦ 279,412'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/30/709296/1.jpg?1393`,
+    productname: `Apple IPhone 12 Pro Max - 256GB, 6GB RAM, 6.7-Inch,`,
+    productprice: '₦ 620,000'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/139307/1.jpg?3251`,
+    productname: `Apple IPhone 12 Pro (128 GB) - Pacific Blue`,
+    productprice: '₦ 520,000'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/122749/1.jpg?5259`,
+    productname: `Apple IPhone 13 Pro Max - 256GB, 6GB RAM, 6.7-Inch,`,
+    productprice: '₦ 720,000'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/884688/1.jpg?2746`,
+    productname: `Samsung Galaxy Z Fold 3 - 256GB ROM Dual Sim - Phantom Black
+    `,
+    productprice: '₦ 920,000 '
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2928632/1.jpg?5128`,
+    productname: `Tecno Spark 10c- 6.6" - 4GB/128GB`,
+    productprice: '₦ 120,000'
+  },
+
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/8887922/1.jpg?2905`,
+    productname: `XIAOMI Redmi Note 12 6.67'' 8GB 128GB ROM Android 13 - Onyx Gray`,
+    productprice: '₦ 150,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/74/7067422/1.jpg?8486',
+    productname: `XIAOMI Redmi 10 2022 - 6.5" (4GB RAM, 128GB ROM) - Carbon Gray`,
+    productprice: '₦ 118,650'
+  },
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/7542032/1.jpg?3477',
+    productname: 'XIAOMI Redmi Note 12 Pro 5G 8GB RAM 256GB ROM 6.67 Dual Sim',
+    productprice: '₦ 195,878'
+  },
+ 
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/23/2037521/1.jpg?6055',
+    productname: ' Samsung Galaxy A73 5G - 6.7" 6GB/128GB Memory - White',
+    productprice: '₦ 370,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/7411722/1.jpg?5299',
+    productname: 'Samsung Galaxy A54 5G 6.4" 256GB/8GB Facial Recognition',
+    productprice: '₦ 315,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/1084132/1.jpg?4284',
+    productname: 'XIAOMI A1 Plus, 6.52" 4G LTE, 2GB/32GB Memory, Fingerprint, Face ID Recognition,',
+    productprice: '₦ 115,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/09/5017732/1.jpg?8724',
+    productname: 'itel P40 6.6" Screen, 64GB ROM + Up To 7GB RAM, 6000mAh 18W',
+    productprice: '₦ 65,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/87/2515032/1.jpg?4731',
+    productname: 'Tecno Spark 10- 6.6" - 8GB/128GB，50MP+Q Rear Camera，5000mAh-Black',
+    productprice: '₦ 95,878'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/397664/1.jpg?9493`,
+    productname: `XIAOMI Redmi Note 12 6.67'' 8GB 128GB ROM Android 13 - Onyx Gray`,
+    productprice: '₦ 150,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/204592/1.jpg?2015',
+    productname: `XIAOMI Redmi 10 2022 - 6.5" (4GB RAM, 128GB ROM) - Carbon Gray`,
+    productprice: '₦ 118,650'
+  },
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/50/909098/1.jpg?3607',
+    productname: 'XIAOMI Redmi Note 12 Pro 5G 8GB RAM 256GB ROM 6.67 Dual Sim',
+    productprice: '₦ 195,878'
+  },
+ 
+
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/73349/1.jpg?7805',
+    productname: ' Samsung Galaxy A73 5G - 6.7" 6GB/128GB Memory - White',
+    productprice: '₦ 370,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/40/037857/1.jpg?0943',
+    productname: 'Samsung Galaxy A54 5G 6.4" 256GB/8GB Facial Recognition',
+    productprice: '₦ 315,000'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/48/4571202/1.jpg?6274',
+    productname: 'XIAOMI A1 Plus, 6.52" 4G LTE, 2GB/32GB Memory, Fingerprint, Face ID Recognition,',
+    productprice: '₦ 115,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/69/7504971/1.jpg?1923',
+    productname: 'itel P40 6.6" Screen, 64GB ROM + Up To 7GB RAM, 6000mAh 18W',
+    productprice: '₦ 65,878'
+  },
+  {
+    productimageUrl: 'https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/24/3796591/2.jpg?0919',
+    productname: 'Tecno Spark 10- 6.6" - 8GB/128GB，50MP+Q Rear Camera，5000mAh-Black',
+    productprice: '₦ 95,878'
+  },
+  {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/96/8887922/1.jpg?2905`,
+      productname: `Hp 15 Intel Celeron N4020 8GB RAM 1TB HDD 15.6" Wins 10 `,
+      productprice: '₦ 150,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/54/667128/1.jpg?5824`,
+      productname: `Hp Stream 11 Intel Celeron - 64GB SSD 4GB RAM Windows 10+ USB Light For Keyboard`,
+      productprice: '₦ 179,900'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/37/1356501/1.jpg?5301`,
+      productname: `Hp 15 Intel Celeron N4020 15.6" 8GB RAM/1TB HDD Win 10 + Mouse`,
+      productprice: '₦ 178,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/10/045718/1.jpg?0894`,
+      productname: `Hp 15 AMD RYZEN3 -12GB RAM 1TB HDD Wins 10Pro-2.6GHz To 3.5GHz`,
+      productprice: '₦ 229,500 '
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/79/3834601/1.jpg?1027`,
+      productname: `Hp Laptop 15 INTEL CELERON Quad Core 8GB RAM -1TB HDD Windows 11 + USB Light For Keyboard`,
+      productprice: '₦ 180,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/110387/1.jpg?5496`,
+      productname: `Hp Pavilion 14 - Intel Core I3 12GB RAM- 12TH GEN- 256GB SSD`,
+      productprice: '₦ 177,900'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/47/124177/1.jpg?9117`,
+      productname: `Hp Notebook 15- AMD RYZEN 3 - 16GB RAM/1TB HDD 2.6GH`,
+      productprice: '₦ 199,000 '
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/08/9607501/1.jpg?3525`,
+      productname: `Hp Stream 11 Pro- Intel Celeron - 4GB RAM - 64GB SSD Windows 10 Pro+ Mouse & USB LIGHT FOR Keyboard`,
+      productprice: '₦ 99,000'
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/8819891/1.jpg?7592`,
+      productname: `Hp 250 G8 Intel Celeron Dualcore,8GB RAM,1TB HDD,Wins 10pro`,
+      productprice: '₦ 212,800 '
+    },
+    {
+      productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/45/4607501/1.jpg?3064`,
+      productname: `Hp Stream 11 Pro- Intel Celeron - 4GB RAM - 64GB SSD Windows 10 Pro+ Mouse & USB LIGHT FOR Keyboard`,
+      productprice: '₦ 272,800  '
+    },
+
+    {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/2698201/1.jpg?5660`,
+    productname: `IPhone X 3GB RAM+64GB(Renewed) -Black`,
+    productprice: '₦ 174,500'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2698201/1.jpg?5628`,
+    productname: `IPhone X 3GB RAM+64GB (Renewed) -White`,
+    productprice: '₦ 176,500 '
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/36/931009/1.jpg?5328`,
+    productname: `IPhone 6 16GB(Refurbished) - Gold (Grade A)`,
+    productprice: '₦ 71,412'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/0477811/1.jpg?2168`,
+    productname: `IPhone 7 Plus 32GB+RAM3GB(Renewed-)-Black IPhone7P`,
+    productprice: '₦ 79,412'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/71/4956431/1.jpg?8817`,
+    productname: `Apple Iphone XR 64gb White, Free Pouch`,
+    productprice: '₦ 279,412'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/30/709296/1.jpg?1393`,
+    productname: `Apple IPhone 12 Pro Max - 256GB, 6GB RAM, 6.7-Inch,`,
+    productprice: '₦ 620,000'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/139307/1.jpg?3251`,
+    productname: `Apple IPhone 12 Pro (128 GB) - Pacific Blue`,
+    productprice: '₦ 520,000'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/122749/1.jpg?5259`,
+    productname: `Apple IPhone 13 Pro Max - 256GB, 6GB RAM, 6.7-Inch,`,
+    productprice: '₦ 720,000'
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/04/884688/1.jpg?2746`,
+    productname: `Samsung Galaxy Z Fold 3 - 256GB ROM Dual Sim - Phantom Black
+    `,
+    productprice: '₦ 920,000 '
+  },
+  {
+    productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/92/2928632/1.jpg?5128`,
+    productname: `Tecno Spark 10c- 6.6" - 4GB/128GB`,
+    productprice: '₦ 120,000'
+  },
+
+]
+    </script>
+</body>
+</html>

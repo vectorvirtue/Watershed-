@@ -45,7 +45,14 @@ width: 40%;
 
     </div>
 
-    <button onclick="myblog()">bjbjb</button>
+
+
+    <ul id="movies">
+
+    </ul>
+
+
+    <button onclick="moviesfunc()">bjbjb</button>
 
 
 
@@ -132,7 +139,31 @@ mylist.innerHTML = contactListHTML;
 }
 
 
+function moviesfunc(){
 
+    const movies = [
+    {
+        title: 'mib',
+        length: '2 hours'
+    }
+    ,
+    {
+        title: 'cars',
+        length: '1 hour hours'
+    }
+]
+
+const moviediv = document.getElementById('movies')
+
+const toy =  movies.map(function(boy) {
+return   `<li>Title:  ${boy.title}  ${boy.length} </li>`
+}  )
+
+const allmovies = toy.join("");
+
+moviediv.innerHTML = allmovies
+
+}
 
 
 
@@ -145,6 +176,35 @@ const blog = [
     {title: "TITLE Three", description: ' djdjd djdhdhd dhdhahda dhdahda dhhahdh'    },
     {title: "TITLE Four", description: ' djdjd djdhdhd dhdhahda dhdahda dhhahdh'    }
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const books = [
+{ 
+    name: 'victor',
+    gender: 'male'
+ },
+
+ { 
+    name: 'ann',
+    gender: 'female'
+ }
+]
+
 
 const myposts =blog.map(function(laptops) {
     return `<div> ${laptops.title} </div>` 
