@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simple Interest Calculator</h1>
+
+    <div class="calculator">
+        <div class="pclass">
+            <div class="principal"><h3>Principal</h3>
+            </div>
+            <div class="input">
+                <input type="text"  value="$" id="principal">
+            </div>
+        </div>
+
+        <div class="iclass">
+            <div class="interest">
+                <h3>Interest Rate</h3>
+            </div>
+            <div class="irate">
+                <input type="number" value="14" id="rate">
+                <div class="percent">%</div>
+
+                <div class="select">
+                    <select name="" id="per">
+                       
+                        <option value="Per year">Per year</option>
+                        <option value="Per month">Per month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="tclass">
+            <div class="term">
+                <h3>Term</h3>
+            </div>
+            <div class="iterm">
+                <input type="number"  id="time">
+            
+
+                <div class="select">
+                    <select name="" id="year">
+                        <option value="Years">Years</option>
+                        <option value="Months">Months</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button onclick="calculate()"> Calculate</button>
+
+        <div class="simpinterest" id="simp">
+            Your balance is
+        </div>
+    </div>
+
+    <script>
+        function calculate(){
+        const principal = document.getElementById('principal') .value
+        const rate = document.getElementById('rate') .value
+        const time = document.getElementById('time') .value
+
+        const simpleinterest = parseInt(principal) * parseInt(rate) * parseInt(time) / 100
+
+        const simp = document.getElementById('simp') .value = simpleinterest
+
+
+        }
+    </script>
+</body>
+</html>
