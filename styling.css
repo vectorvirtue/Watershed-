@@ -60,6 +60,7 @@ text-align: left;
     width: 70vh;
     padding: 10px;
     border-radius: 8px;
+    padding-inline: 209px;
 }
 .primary a{
     color: white;

@@ -21,23 +21,41 @@
 
         <div class="boxes">
             <div class="bxone">
-                <input type="text" placeholder="*">
+                <input type="password" placeholder="*" id="code">
              </div>
              <div class="bxone">
-                <input type="text" placeholder="*">
+                <input type="password" placeholder="*"  id="codeone">
              </div>
              <div class="bxone">
-                <input type="text" placeholder="*">
+                <input type="password" placeholder="*"  id="codetwo">
              </div>
             <div class="bxone">
-               <input type="text" placeholder="*">
+               <input type="password" placeholder="*"  id="codethree">
             </div>
         </div>
-        <div class="primary"><a href="">Verify Email Address</a></div>
+        <div class="primary"><button onclick="code()">Verify Email Address</button></div>
         <div class="span">
-           Didn't get code? <span><a href="">Resend</a></span>
+           Didn't get code? <span><a href="verify.html">Resend</a></span>
         </div>
       </div>
+    <script>
+       function code(){
+        const code = '1'
+        const codeone = '1'
+        const codetwo = '1'
+        const codethree = '1'
+        const mycode = document.getElementById("code").value
+        const mycodeone = document.getElementById("codeone").value
+        const mycodetwo = document.getElementById("codetwo").value
+        const mycodethree = document.getElementById("codethree").value
+        
+        if (code == mycode && codeone == mycodeone && codetwo == mycodetwo && codethree == mycodethree) {
+            window.location.href ='activate.html'
+        } else {
+            alert('Not correct')
+        }
 
+       }
+    </script>
 </body>
 </html>
