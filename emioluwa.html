@@ -10,10 +10,11 @@
 <a href='https://www.figma.com/file/wXOBV95W79rGRMLLnv6u4a/Shopping-Ecommerce-Website-UI-Kit---UI8-(Community)?type=design&node-id=113%3A7674&mode=design&t=BXFQBGEB0g2WVY3p-1'>
 figma link
 </a>
-
+<div id="phonedetails"></div>
 
     <script>
-const mobilephones = [
+function array(){
+  const mobilephones = [
   {
     productimageUrl: `https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/397664/1.jpg?9493`,
     productname: `XIAOMI Redmi Note 12 6.67'' 8GB 128GB ROM Android 13 - Onyx Gray`,
@@ -435,6 +436,23 @@ const mobilephones = [
   },
 
 ]
+ 
+const phonedetails = document.getElementById('phonedetails');
+ const foundphone = phonedetails.find(phonedetails = mobilephones.productname=== 'Tecno Spark 10c- 6.6" - 4GB/128GB')
+ if(foundphone){
+  phonedetails.innerHTML=
+
+  productimageUrl :${foundmobilephone.productimageUrl};
+  productname: ${foundmobilephone.productname};
+  productprice: ${foundmobilephone.productprice};
+
+  else{
+    alert('Not found')
+  }
+  
+ }
+}
+
     </script>
 </body>
 </html>
